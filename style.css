@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar start's */
+
+.navbar {
+    background-color: currentColor;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(15, 15, 35, 0.1) !important;
+    backdrop-filter: blur(25px) saturate(180%);
+    border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 50px;
+    /* height: 125px; */
+    align-items: center;
+}
+
+/* .navbar div {
+    filter: blur(5px);
+} */
+
+
+
+/* Navbar end's */
