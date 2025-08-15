@@ -1,35 +1,134 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(-120deg, deepskyblue, darkblue);
+    background-image: url(bg-images/dark\ space.jpg);
+    /* backdrop-filter: blur(1px); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-/* Navbar start's */
+/* Navbar css start's_____________________________________________________________ */
 
-.navbar {
-    background-color: currentColor;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background: rgba(15, 15, 35, 0.1) !important;
-    backdrop-filter: blur(25px) saturate(180%);
-    border-bottom: 1px solid rgba(100, 255, 218, 0.2);
-    z-index: 1000;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+nav {
+    /* background-image: url(space\ img.jpeg); */
+    background-size: 100vw;
+    backdrop-filter: blur(5px);
+    height: 9vw;
+    padding: 0px 0px 0px 2vw;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    min-height: 50px;
-    /* height: 125px; */
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
-/* .navbar div {
-    filter: blur(5px);
-} */
+/* Navbar 1st div start's_____________________________________________________________ */
+
+.logo {
+    width: 5vw;
+    transition: all 0.5s;
+}
+
+.logo:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
+
+/* Navbar 1st div end's_____________________________________________________________ */
+
+
+/* Navbar 2nd div start's_____________________________________________________________ */
+
+nav .nav_2nd_div {
+    display: flex;
+    position: relative;
+    margin: auto;
+}
+
+nav .nav_2nd_div input {
+    padding: 0px 2.9vw 0.3px 1vw;
+    height: 3vw;
+    width: 80vw;
+    font-size: 1.5vw;
+    border-radius: 1vw !important;
+}
+
+.search_icon {
+    color: darkblue;
+    position: absolute;
+    right: 1.2vw;
+    top: 0.3vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: .5vw;
+    background-color: transparent;
+    transition: 300ms;
+}
+
+.search_icon:hover {
+    color: white;
+    background-color: darkblue;
+    border-radius: 50%;
+    padding: .5vw;
+}
+
+/* Navbar 2nd div end's_____________________________________________________________ */
+
+/* Navbar css end's_____________________________________________________________ */
+
+/* Body css start's */
+
+p {
+    color: white;
+}
+
+/* Body css end's */
 
 
 
-/* Navbar end's */
+
+
+/* Media Queries Start's */
+
+@media only screen and (max-width: 768px) {
+    .search_icon {
+        top: 0.5vw;
+        right: 1.8vw;
+    }
+
+    .search_icon:hover {
+        top: 0.4vw;
+        right: 1.8vw;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .search_icon {
+        top: .4vw;
+        right: 2vw;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .search_icon {
+        top: .8vw;
+        right: 2.5vw;
+    }
+
+    .search_icon:hover {
+        top: .3vw;
+        right: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .search_icon {
+        top: .5vw;
+        right: 3vw;
+    }
+}
+
+/* Media Queries End's */
