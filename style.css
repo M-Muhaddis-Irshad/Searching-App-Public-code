@@ -97,39 +97,150 @@ nav .nav_2nd_div input {
     align-items: center;
     border-radius: 1vw;
     padding: 1vw;
-    /* background-color: darkblue; */
-    backdrop-filter: blur(1px);
-    background-color: rgba(0, 16, 104, 0.2);
-    transition: 0.5s; 
+    /* backdrop-filter: blur(1px); */
 }
 
-.body_1st_div:hover {
-    background-color: rgba(0, 0, 63, 0.3); 
-}
-
-h1 {
-    color: white !important;
-}
-h1:hover {
-    color: white !important;
-    scale: 1vw !important;
-}
-
-h5 {
+.body_1st_div h1 {
     color: white !important;
 }
 
-h6 {
+.body_1st_div h5 {
     color: white !important;
 }
 
-p {
+.body_1st_div h6 {
+    color: white !important;
+}
+
+.body_1st_div p {
     color: white;
 }
 
 /* Body css end's */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p {
+    font-size: 12px;
+}
+
+.center {
+    /* height: 100vh; */
+    margin: 10vw 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+/* End Non-Essential  */
+
+.property-card {
+    height: 18em;
+    width: 14em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 5px 5px 27px #a8a8a8, -5px -5px 27px #ffffff;
+}
+
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+/* .property-image {
+    height: 6em;
+    width: 14em;
+    position: Absolute;
+    top: 0px;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
+} */
+
+.property-image img {
+    height: 20vw;
+    width: 100%;
+}
+
+.property-image img {
+    transition: 0.5s;
+}
+
+.property-image img:hover {
+    scale: 1.1;
+}
+
+
+/* Bottom Card Section */
+
+.property-description {
+    background-color: #FAFAFC;
+    background-color: rgb(180, 180, 180);
+    height: 12em;
+    width: 14em;
+    position: absolute;
+    bottom: 0em;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 0.5em 1em;
+    text-align: center;
+}
+
+/* Social Icons */
+
+.property-social-icons {
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Property Cards Hover States */
+
+.property-card:hover .property-description {
+    height: 0em;
+    padding: 0px 1em;
+}
+
+.property-card:hover .property-social-icons {
+    border-radius: 50%;
+    background-color: white;
+}
+
+.property-card:hover .property-social-icons:hover {
+    background-color: blue;
+    cursor: pointer;
+}
 
 
 
@@ -174,3 +285,25 @@ p {
 }
 
 /* Media Queries End's */
+
+
+
+
+
+
+
+
+
+
+.property-image {
+    height: 6em;
+    width: 14em;
+    position: Absolute;
+    top: 0px;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-image: url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');*/
+}
