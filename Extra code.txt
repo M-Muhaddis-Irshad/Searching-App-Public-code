@@ -1,0 +1,40 @@
+/* Top Half of card, image. */
+
+/* .property-image {
+    height: 6em;
+    width: 14em;
+    position: Absolute;
+    top: 0px;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
+} */
+
+
+.property-image {
+    height: 6em;
+    width: 14em;
+    position: Absolute;
+    top: 0px;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-image: url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');*/
+}
+
+/* Social Icons */
+
+.property-social-icons {
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
