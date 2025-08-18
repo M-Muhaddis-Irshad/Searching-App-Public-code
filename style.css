@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     background-image: linear-gradient(-120deg, deepskyblue, darkblue);
-    /* background-image: url(All_folders_related_to_web/bg-images/dark_space.jpg); */
     background-image: url(All_folders_related_to_web/bg-images/dark_spacewp.webp);
     /* backdrop-filter: blur(1px); */
     background-position: center;
@@ -124,20 +123,8 @@ nav .nav_2nd_div input {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5px;
+    gap: 20px;
 }
-
-/* .center {
-    margin: 10vw 0px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    flex-wrap: wrap;
-} */
-/* align-items: center; */
-
-/* End Non-Essential  */
 
 .property-card {
     margin-block: 2vw;
@@ -174,14 +161,12 @@ nav .nav_2nd_div input {
 
 .property-description {
     backdrop-filter: blur(30px);
-    /* background-color: rgb(180, 180, 180); */
-    /* background-color: #FAFAFC; */
-    height: 192px;
+    height: 220px;
     width: 224px;
     position: absolute;
     bottom: 0em;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    padding: 0.5em 1em;
+    padding: 8px 16px;
     text-align: center;
 }
 
@@ -205,6 +190,11 @@ nav .nav_2nd_div input {
     text-shadow: 1px 1px 5px black;
 }
 
+.property-description h6 {
+    color: grey;
+    color: white;
+}
+
 /* Body Second(2nd) div end's______________ */
 
 /* Body css end's______________________________________ */
@@ -213,6 +203,12 @@ nav .nav_2nd_div input {
 
 
 /* Media Queries Start's___________________________ */
+
+@media only screen and (max-width: 1024px) {
+    .body_2nd_div {
+        gap: 15px;
+    }
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -242,16 +238,6 @@ nav .nav_2nd_div input {
         top: .9vw;
         right: 2.4vw;
     }
-/* 
-    .search_icon {
-        top: 0.5vw;
-        right: 1.8vw;
-    }
-
-    .search_icon:hover {
-        top: 0.4vw;
-        right: 1.8vw;
-    } */
 
     /* Navbar 2nd div end's_____________________________________________________________ */
 
@@ -272,12 +258,12 @@ nav .nav_2nd_div input {
 
     .property-description {
         backdrop-filter: blur(30px);
-        height: 152px;
+        height: 190px;
         width: 184px;
         position: absolute;
         bottom: 0em;
         transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-        padding: 0.5em 1em;
+        padding: 8px 16px;
         text-align: center;
     }
 
@@ -348,19 +334,19 @@ nav .nav_2nd_div input {
 
     .property-description {
         backdrop-filter: blur(30px);
-        height: 142px;
+        height: 162px;
         width: 100%;
         position: absolute;
         bottom: 0em;
         transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-        padding: 0.5em 1em;
+        padding: 8px 16px;
         text-align: center;
     }
 
     /* Property Cards Hover States */
 
     .property-description h5 {
-        font-size: 16px;
+        /* font-size: 16px; */
         color: white;
         text-shadow: 2px 2px 5px black;
     }
@@ -458,12 +444,12 @@ nav .nav_2nd_div input {
 
     .property-description {
         backdrop-filter: blur(30px);
-        height: 192px;
+        height: 210px;
         width: 100%;
         position: absolute;
         bottom: 0em;
         transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-        padding: 0.5em 1em;
+        padding: 8px 16px;
         text-align: center;
     }
 
