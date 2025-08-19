@@ -59,7 +59,7 @@ nav .nav_2nd_div input {
 .input_error::placeholder {
     color: red;
     opacity: 70%;
-} 
+}
 
 .search_icon {
     color: darkblue;
@@ -131,7 +131,7 @@ nav .nav_2nd_div input {
     gap: 20px;
 }
 
-.property-card {
+.movies-card {
     margin-block: 2vw;
     margin-inline: 1vw;
     height: 310px;
@@ -149,22 +149,19 @@ nav .nav_2nd_div input {
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
 
 
-.property-image img {
+.movies-image img {
     height: 100%;
     width: 100%;
-}
-
-.property-image img {
     transition: 0.5s;
 }
 
-.property-image img:hover {
+.movies-image img:hover {
     scale: 1.1;
 }
 
 /* Bottom Card Section */
 
-.property-description {
+.movies-description {
     backdrop-filter: blur(30px);
     height: 220px;
     width: 224px;
@@ -175,27 +172,27 @@ nav .nav_2nd_div input {
     text-align: center;
 }
 
-/* Property Cards Hover States */
+/* movies Cards Hover States */
 
-.property-card:hover .property-description {
+.movies-card:hover .movies-description {
     height: 0px;
     padding: 0px 16px;
 }
 
-.property-description h5 {
+.movies-description h5 {
     /* font-size: 12px; */
     color: white;
     text-shadow: 2px 2px 5px black;
 }
 
-.property-description p {
+.movies-description p {
     color: white;
     /* margin-top: 10px; */
     font-size: 14px;
     text-shadow: 1px 1px 5px black;
 }
 
-.property-description h6 {
+.movies-description h6 {
     color: grey;
     color: white;
 }
@@ -246,7 +243,7 @@ nav .nav_2nd_div input {
 
     /* Navbar 2nd div end's_____________________________________________________________ */
 
-    .property-card {
+    .movies-card {
         margin-block: 2vw;
         margin-inline: 1vw;
         height: 258px;
@@ -261,7 +258,7 @@ nav .nav_2nd_div input {
         box-shadow: 5px 5px 15px #a8a8a8, -5px -5px 15px #a8a8a8;
     }
 
-    .property-description {
+    .movies-description {
         backdrop-filter: blur(30px);
         height: 190px;
         width: 184px;
@@ -272,15 +269,15 @@ nav .nav_2nd_div input {
         text-align: center;
     }
 
-    /* Property Cards Hover States */
+    /* movies Cards Hover States */
 
-    .property-description h5 {
+    .movies-description h5 {
         /* font-size: 12px; */
         color: white;
         text-shadow: 2px 2px 5px black;
     }
 
-    .property-description p {
+    .movies-description p {
         color: white;
         font-size: 10px;
         text-shadow: 1px 1px 5px black;
@@ -323,7 +320,7 @@ nav .nav_2nd_div input {
         text-align: center;
     }
 
-    .property-card {
+    .movies-card {
         margin: 2.5vw 2vw;
         height: 218px;
         width: 144px;
@@ -337,7 +334,7 @@ nav .nav_2nd_div input {
         box-shadow: 5px 5px 15px #a8a8a8, -5px -5px 15px #a8a8a8;
     }
 
-    .property-description {
+    .movies-description {
         backdrop-filter: blur(30px);
         height: 162px;
         width: 100%;
@@ -348,15 +345,15 @@ nav .nav_2nd_div input {
         text-align: center;
     }
 
-    /* Property Cards Hover States */
+    /* movies Cards Hover States */
 
-    .property-description h5 {
+    .movies-description h5 {
         /* font-size: 16px; */
         color: white;
         text-shadow: 2px 2px 5px black;
     }
 
-    .property-description p {
+    .movies-description p {
         color: white;
         font-size: 10px;
         text-shadow: 1px 1px 5px black;
@@ -431,7 +428,7 @@ nav .nav_2nd_div input {
     }
 
 
-    .property-card {
+    .movies-card {
         margin: 3vw 0;
         height: 288px;
         width: 214px;
@@ -445,7 +442,7 @@ nav .nav_2nd_div input {
         box-shadow: 5px 5px 15px #a8a8a8, -5px -5px 15px #a8a8a8;
     }
 
-    .property-description {
+    .movies-description {
         backdrop-filter: blur(30px);
         height: 210px;
         width: 100%;
@@ -456,16 +453,16 @@ nav .nav_2nd_div input {
         text-align: center;
     }
 
-    /* Property Cards Hover States */
+    /* movies Cards Hover States */
 
-    .property-description h5 {
+    .movies-description h5 {
         /* font-size: 12px; */
         color: white;
         text-shadow: 2px 2px 5px black;
         margin-bottom: 20px;
     }
 
-    .property-description p {
+    .movies-description p {
         color: white;
         font-size: 12px;
         text-shadow: 1px 1px 5px black;

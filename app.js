@@ -7,7 +7,7 @@ const movies_name = document.getElementsByClassName(`movie_name`);
 function SearchMovie() {
 
     if (input.value === "" || input.value.trim() == "") {
-        input.placeholder = `Enter Correct Movie Name`;
+        input.placeholder = `Enter any movie name...`;
         document.getElementById(`user_input`).classList.add(`input_error`);
     }
     else {
@@ -19,10 +19,13 @@ function SearchMovie() {
 
             const movies = movies_name[i].innerText.toLowerCase()
 
-            if (movies.includes(input_filter)) {
+            if (input_filter === movies) {
                 console.log(movies_name[i].innerText);
                 movies_name[i].parentElement.parentElement.style.display = "block";
                 input.placeholder = "To visible all movies type 'Show All Movies'";
+                document.getElementsByClassName(`body_container`)[i].style.display = "flex"
+                // input.value = ""
+
             }
             else if (input_filter === "Show All Movies" || input_filter === "show all movies") {
                 movies_name[i].parentElement.parentElement.style.display = "block";
@@ -35,9 +38,17 @@ function SearchMovie() {
             }
 
         }
+        // if (input.value === "Show All Movies" || input.value === "show all movies") {
+        //     movies_name.parentElement.parentElement.style.display = "block";
+        //     input.placeholder = `Enter movie name...`
+        // }
     }
 
+    // input.value = ""
+
 }
+
+// document.getElementById(`user_input`).addEventListener("input", () => SearchMovie() )
 
 document.getElementById(`user_input`).addEventListener("keypress", (event) => {
     if (event.key === "Enter") {
