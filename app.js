@@ -1,3 +1,17 @@
+const logo_Title = document.getElementById("logo_Title");
+
+function logoHover() {
+
+    logo_Title.classList.add("active");
+
+}
+
+function logoOut() {
+
+    logo_Title.classList.remove(`active`)
+
+}
+
 const input = document.getElementById(`user_input`);
 const movies_name = document.getElementsByClassName(`movie_name`);
 
@@ -23,7 +37,7 @@ function SearchMovie() {
                 console.log(movies_name[i].innerText);
                 movies_name[i].parentElement.parentElement.style.display = "block";
                 input.placeholder = "To visible all movies type 'Show All Movies'";
-                document.getElementsByClassName(`body_container`)[i].style.display = "flex"
+                document.getElementsByClassName(`body_2nd_div`)[i].style.display = "flex"
                 // input.value = ""
 
             }
