@@ -30,7 +30,7 @@ function SearchMovie() {
     }
     else {
 
-        const all_mvs_vsbl_cmd = "Want to visible all movies Type (Show all movies)";
+        const all_mvs_vsbl_cmd = "Type (Show all movies) to explore the full list!";
         const all_mvs_vsbl = `Show all movies`;
 
         let movie_found = false;

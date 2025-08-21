@@ -31,7 +31,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2px;
+    gap: 4px;
 }
 
 .logo {
@@ -46,7 +46,7 @@ nav {
 
 .logo_title {
     font-size: 2vw;
-    color: white;
+    /* color: white; */
     opacity: 0;
     transform: scale(0.8);
     transition: 0.3s;
@@ -70,6 +70,26 @@ nav .nav_2nd_div {
     margin: auto;
 }
 
+.input {
+    color: #069ee1 !important;
+    text-shadow: 0px 0px 1px cyan;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: 2px solid rgba(230, 230, 230, 0.493) !important;
+    transition: 0.2s !important;
+}
+
+.input:focus {
+    transform: translateY(-2px) !important;
+    box-shadow: 0px 0px 8px #069ee1 !important;
+    border-color: #069ee1 !important;
+}
+
+
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.397) !important;
+    text-shadow: none !important;
+}
+
 nav .nav_2nd_div input {
     padding: 0px 2.9vw 0.3px 1vw;
     height: 3vw;
@@ -80,11 +100,11 @@ nav .nav_2nd_div input {
 
 .input_error::placeholder {
     color: red !important;
-    opacity: 70% !important;
+    /* opacity: 70% !important; */
 }
 
 .search_icon {
-    color: darkblue;
+    color: #069EE1;
     position: absolute;
     right: 1.2vw;
     top: 0.3vw;
@@ -129,16 +149,22 @@ nav .nav_2nd_div input {
     /* backdrop-filter: blur(1px); */
 }
 
-.body_1st_div h1 {
-    color: white !important;
-}
-
-.body_1st_div h5 {
-    color: white !important;
-}
-
+.body_1st_div h1,
+.body_1st_div h5,
 .body_1st_div h6 {
+    color: #069ee1 !important;
+    color: #005d85 !important;
+
     color: white !important;
+    text-shadow: 0px 0px 20px #005d85;
+    font-weight: 700;
+
+    /* background-image: url(All_folders_related_to_web/bg-images/space_img.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
 }
 
 /* Body First(1st) div end's______________ */
