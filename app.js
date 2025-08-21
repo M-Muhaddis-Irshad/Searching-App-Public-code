@@ -1,3 +1,5 @@
+// Logo Title Start's_______________________________
+
 const logo_Title = document.getElementById("logo_Title");
 
 function logoHover() {
@@ -12,61 +14,68 @@ function logoOut() {
 
 }
 
+// Logo Title End's_______________________________
+
+
 const input = document.getElementById(`user_input`);
 const movies_name = document.getElementsByClassName(`movie_name`);
 
 // console.log(movies_name.innerText);
 
-
 function SearchMovie() {
 
-    if (input.value === "" || input.value.trim() == "") {
-        input.placeholder = `Enter any movie name...`;
-        document.getElementById(`user_input`).classList.add(`input_error`);
+    if (input.value === "" || input.value.trim() === "") {
+        input.placeholder = "Enter any movie name..."
+        input.classList.add(`input_error`)
     }
     else {
 
-        const input_filter = input.value.toLowerCase();
+        const all_mvs_vsbl_cmd = "Want to visible all movies Type (Show all movies)";
+        const all_mvs_vsbl = `Show all movies`;
 
-        let i;
-        for (i = 0; i < movies_name.length; i++) {
+        let movie_found = false;
 
-            const movies = movies_name[i].innerText.toLowerCase()
+        for (let i = 0; i < movies_name.length; i++) {
 
-            if (input_filter === movies) {
-                console.log(movies_name[i].innerText);
-                movies_name[i].parentElement.parentElement.style.display = "block";
-                input.placeholder = "To visible all movies type 'Show All Movies'";
-                document.getElementsByClassName(`body_2nd_div`)[i].style.display = "flex"
-                // input.value = ""
+            // console.log(movies_name[i].innerText);
 
+            const movies_card = movies_name[i].parentElement.parentElement.parentElement;
+
+            const mvs_name = movies_name[i].innerText;
+
+            if (mvs_name.includes(input.value) || mvs_name.toLowerCase().includes(input.value) || mvs_name.toUpperCase().includes(input.value)) {
+                movies_card.style.display = "block"
+                input.placeholder = all_mvs_vsbl_cmd
+                input.classList.remove(`input_error`)
+                movie_found = true;
             }
-            else if (input_filter === "Show All Movies" || input_filter === "show all movies") {
-                movies_name[i].parentElement.parentElement.style.display = "block";
-                input.placeholder = `Enter movie name...`
+            else if (input.value === all_mvs_vsbl || input.value === all_mvs_vsbl.toUpperCase() || input.value === all_mvs_vsbl.toLowerCase()) {
+                movies_card.style.display = "block"
+                input.placeholder = "Enter movie name..."
+                input.classList.remove(`input_error`)
+                movie_found = true;
             }
             else {
-                movies_name[i].parentElement.parentElement.style.display = "none";
-                input.placeholder = `Movie name is incorrect`
-                // console.log("Movie Name is Incorrect");
+                movies_card.style.display = "none"
             }
 
         }
-        // if (input.value === "Show All Movies" || input.value === "show all movies") {
-        //     movies_name.parentElement.parentElement.style.display = "block";
-        //     input.placeholder = `Enter movie name...`
-        // }
-    }
 
-    // input.value = ""
+        if (!movie_found) {
+            input.placeholder = "Incorrect movie name..."
+            input.classList.add(`input_error`)
+        }
+
+    }
 
 }
 
 // document.getElementById(`user_input`).addEventListener("input", () => SearchMovie() )
 
-document.getElementById(`user_input`).addEventListener("keypress", (event) => {
+input.addEventListener("keypress", (event) => {
     if (event.key === "Enter") {
         SearchMovie()
         input.value = ""
+        input.focus()
     }
 })
